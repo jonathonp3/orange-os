@@ -22,9 +22,16 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       - gparted
+      - guestfs-tools
+      - libguestfs-tools
+      - libvirt
+      - libvirt-daemon-config
       - micro
+      - python3-libguestfs
       - starship
       - virt-manager
+      - virt-top
+      - virt-viewer
       - vim
     remove:
       # example: removing firefox (in favor of the flatpak)
