@@ -19,12 +19,56 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - gparted
-      - micro
-      - starship
+      # Codecs Encoding
+      - ffmpeg
+      - ffmpeg-libs
+      - ffmpegthumbnailer
+      
+      # Containers
+      - distrobox
+      
+      # Editors
+      - pluma
       - vim
+      
+      ## Google fonts
+      - google-noto-sans-balinese-fonts
+      - google-noto-sans-cjk-fonts
+      - google-noto-sans-javanese-fonts
+      - google-noto-sans-sundanese-fonts
+
+      # Miscellaneous
+      - python
+      - python3-pip # gext
+      - rsync
+      - syncthing
+      - starship
+      - tailscale
+  
+      # Virtualisation
+      - qemu
+      - libvirt
+      - virt-manager
+      - virt-install
+     
+      # 
+      - flatpak-spaw
+      - fuse
+      - grub2-tools-extra
+      - gparted
+      - lshw
+      - micro
+      - net-tools
+      - rsync
+      - smartmontools
+      - traceroute
+      - zstd
+      - wireguard-tools
+
+     
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -41,6 +85,7 @@ modules:
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
+    
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
