@@ -34,21 +34,6 @@ modules:
       # Editors
       - pluma
       - vim
-      
-      ## Google fonts
-      - google-noto-sans-balinese-fonts
-      - google-noto-sans-cjk-fonts
-      - google-noto-sans-javanese-fonts
-      - google-noto-sans-sundanese-fonts
-
-      # Miscellaneous
-      - lshw
-      - python
-      - python3-pip # gext
-      - rsync
-      - syncthing
-      - starship
-      - tailscale
   
       # Virtualisation
       - qemu
@@ -64,9 +49,15 @@ modules:
       - lshw
       - micro
       - net-tools
+      - python
+      - python3-pip # gext
       - rsync
       - smartmontools
+      - syncthing
+      - starship
+      - tailscale
       - traceroute
+      
       - zstd
       - wireguard-tools
 
@@ -105,9 +96,41 @@ modules:
         - org.videolan.VLC
 
       remove:
-        - org.gnome.eog
+       # - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
-    
+     - type: script
+    scripts:
+
+  - type: systemd
+    system:
+      enabled:
+      # - fabric.service  
+    user:
+      enabled:
+       - syncthing.service
+     
+  - type: fonts
+    fonts:
+  
+      google-fonts:
+       - google-noto-sans-balinese-fonts
+       - google-noto-sans-cjk-fonts
+       - google-noto-sans-javanese-fonts
+       - google-noto-sans-sundanese-fonts
+       - Roboto
+       - Open Sans
+       - Work Sans
+       - Outfit
+       - Space Grotesk
+       - Inter
+       - Atkinson Hyperlegible
+       - IBM Plex Sans
+
+  - type: gnome-extensions
+    install:
+
+  - type: gnome-extensions
+    install: 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
