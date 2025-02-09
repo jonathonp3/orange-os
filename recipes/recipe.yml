@@ -29,7 +29,7 @@ modules:
       - yt-dlp
       
       # Containers
-      - distrobox
+    # - distrobox
       
       # Editors
       - pluma
@@ -43,7 +43,7 @@ modules:
      
       # 
       - flatpak-spaw
-      - fuse
+    # - fuse
       - grub2-tools-extra
       - gparted
       - lshw
@@ -57,7 +57,6 @@ modules:
       - starship
       - tailscale
       - traceroute
-      
       - zstd
       - wireguard-tools
 
@@ -108,10 +107,10 @@ modules:
   - type: systemd
     system:
       enabled:
-     # - fabric.service  
+     #  - fabric.service  
     user:
       enabled:
-       - syncthing.service
+     # - syncthing.service
      
   - type: fonts
     fonts:
@@ -121,17 +120,7 @@ modules:
        - google-noto-sans-cjk-fonts
        - google-noto-sans-javanese-fonts
        - google-noto-sans-sundanese-fonts
-       - Roboto
-       - Open Sans
-       - Work Sans
-       - Outfit
-       - Space Grotesk
-       - Inter
-       - Atkinson Hyperlegible
-       - IBM Plex Sans
-
-  - type: gnome-extensions
-    install:
+       - google-roboto-fonts
 
   - type: gnome-extensions
     install: 
