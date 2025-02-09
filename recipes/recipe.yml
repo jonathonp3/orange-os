@@ -99,7 +99,7 @@ modules:
         - org.videolan.VLC
 
       remove:
-       # - org.gnome.eog
+      # - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
      - type: script
     scripts:
@@ -107,7 +107,7 @@ modules:
   - type: systemd
     system:
       enabled:
-      # - fabric.service  
+     # - fabric.service  
     user:
       enabled:
        - syncthing.service
