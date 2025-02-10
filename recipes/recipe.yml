@@ -75,9 +75,6 @@ modules:
         - org.videolan.VLC
        
     user: {} # Also add Flathub user repo, but no user packages
-     
-     - type: flatpak-romote
-     
      install:
      flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
 
