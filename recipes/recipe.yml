@@ -48,6 +48,11 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+    - type: bling
+      install:
+    - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
+    - ublue-update # https://github.com/ublue-os/ublue-update
+
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -73,11 +78,6 @@ modules:
         - org.signal.Signal
         - org.telegram.desktop
         - org.videolan.VLC
-
- - type: bling
-      install:
-      - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
-      - ublue-update # https://github.com/ublue-os/ublue-update
       
     user: {} # Also add Flathub user repo, but no user packages
   
