@@ -88,9 +88,9 @@ modules:
   
   - type: gnome-extensions
     install:
-        - https://extensions.gnome.org/extension/2/move-clock/
-        - https://extensions.gnome.org/extension/4/panel-favorites/
-        - https://extensions.gnome.org/extension/602/window-list/
+        - Frippery Move Clock
+        - Frippery Panel Favorites
+        - Window List
 
   - type: bling
     install:
