@@ -73,9 +73,14 @@ modules:
         - org.signal.Signal
         - org.telegram.desktop
         - org.videolan.VLC
-       
+
+ - type: bling
+      install:
+      - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
+      - ublue-update # https://github.com/ublue-os/ublue-update
+      
     user: {} # Also add Flathub user repo, but no user packages
-     install:
-     flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
+  
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
