@@ -40,7 +40,16 @@ modules:
         - com.google.Chrome
         - com.spotify.Client
         - io.bassi.Amberol
-
+        - it.mijorus.gearlever
+        - org.kde.kdenlive
+        - org.freac.freac
+        - org.gimp.GIMP
+        - org.gnome.Evolution
+        - org.gnome.gedit
+        - org.gnome.gThumb
+        - org.gnome.gedit
+        - org.gnome.Rhythmbox3
+        - org.gnome.SimpleScan
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
