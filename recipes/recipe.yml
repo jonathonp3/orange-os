@@ -85,6 +85,12 @@ modules:
         - org.videolan.VLC
         
     user: {} # Also add Flathub user repo, but no user packages
+  
+  - type: gnome-extensions
+    install:
+        - https://extensions.gnome.org/extension/2/move-clock/
+        - https://extensions.gnome.org/extension/4/panel-favorites/
+        - https://extensions.gnome.org/extension/602/window-list/
 
   - type: bling
     install:
