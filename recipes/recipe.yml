@@ -30,10 +30,19 @@ modules:
       - virt-install
 
       - ffmpeg
+
+      - google-noto-sans-balinese-fonts
+      - google-noto-sans-cjk-fonts
+      - google-noto-sans-javanese-fonts
+      - google-noto-sans-sundanese-fonts
+      - google-roboto-fonts
+      
       - gparted
       - lshw
       - net-tools
       - pluma
+      - python
+      - python3-pip
       - rsync
       - smartmontools
       - syncthing
