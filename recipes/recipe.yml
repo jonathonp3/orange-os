@@ -24,11 +24,11 @@ modules:
       - micro
       - starship
 
-        # Virtualisation
-        - qemu
-        - libvirt
-        - virt-manager
-        - virt-install
+      # Virtualisation
+      - qemu
+      - libvirt
+      - virt-manager
+      - virt-install
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
