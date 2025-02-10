@@ -73,8 +73,6 @@ modules:
         - org.signal.Signal
         - org.telegram.desktop
         - org.videolan.VLC
-
-      remove:
        
     user: {} # Also add Flathub user repo, but no user packages
 
