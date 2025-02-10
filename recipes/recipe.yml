@@ -52,12 +52,6 @@ modules:
         - org.gnome.Rhythmbox3
         - org.gnome.SimpleScan
         - org.keepassxc.KeePassXC
-      # - org.clementine_player.Clementine
-        - org.kde.kid3
-        - org.signal.Signal
-      # - org.libreoffice.LibreOffice
-        - org.telegram.desktop
-        - org.videolan.VLC
 
       remove:
         - org.gnome.eog
