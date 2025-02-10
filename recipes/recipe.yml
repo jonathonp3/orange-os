@@ -50,6 +50,11 @@ modules:
         - org.gnome.gedit
         - org.gnome.Rhythmbox3
         - org.gnome.SimpleScan
+        - org.kde.kid3
+        - org.signal.Signal
+        - org.telegram.desktop
+        - org.videolan.VLC
+
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
