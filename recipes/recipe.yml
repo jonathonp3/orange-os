@@ -28,6 +28,20 @@ modules:
       - libvirt
       - virt-manager
       - virt-install
+
+      - gparted
+      - lshw
+      - net-tools
+      - pluma
+      - rsync
+      - smartmontools
+      - syncthing
+      - traceroute
+      - vim
+      - zstd
+      - yt-dlp
+      - wireguard-tools
+      
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -61,7 +75,7 @@ modules:
         - org.videolan.VLC
 
       remove:
-        - org.gnome.eog
+       # - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
