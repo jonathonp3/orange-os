@@ -38,6 +38,8 @@ modules:
         - org.gnome.Loupe
         - com.github.tchx84.Flatseal
         - com.google.Chrome
+        - com.spotify.Client
+        - io.bassi.Amberol
 
       remove:
         - org.gnome.eog
