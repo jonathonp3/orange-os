@@ -36,6 +36,29 @@ modules:
       install:
         - org.mozilla.firefox
         - org.gnome.Loupe
+        - com.github.tchx84.Flatseal
+        - com.google.Chrome
+        - com.spotify.Client
+        - io.bassi.Amberol
+        - io.github.ungoogled_software.ungoogled_chromium
+        - it.mijorus.gearlever
+        - org.kde.kdenlive
+        - org.freac.freac
+        - org.gimp.GIMP
+        - org.gnome.Evolution
+        - org.gnome.gedit
+        - org.gnome.gThumb
+        - org.gnome.gedit
+        - org.gnome.Rhythmbox3
+        - org.gnome.SimpleScan
+        - org.keepassxc.KeePassXC
+      # - org.clementine_player.Clementine
+        - org.kde.kid3
+        - org.signal.Signal
+      # - org.libreoffice.LibreOffice
+        - org.telegram.desktop
+        - org.videolan.VLC
+
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
