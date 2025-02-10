@@ -34,7 +34,7 @@ modules:
      install:
 
       # Codecs Encoding:
-      # - ffmpeg
+        - ffmpeg
       # - ffmpeg-libs
       # - ffmpegthumbnailer
         - yt-dlp
