@@ -85,13 +85,13 @@ modules:
         - org.videolan.VLC
         
     user: {} # Also add Flathub user repo, but no user packages
-  
-  - type: gnome-extensions
-    install: Window List
 
   - type: bling
     install:
         - negativo17
-
-
+  
+  - type: bling
+    install:
+        - Window List
+    
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
