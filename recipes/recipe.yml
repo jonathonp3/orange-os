@@ -73,7 +73,7 @@ modules:
        - smartmontools
        - syncthing
        - starship
-      # - tailscale
+       # - tailscale
         - traceroute
         - zstd
         - wireguard-tools
