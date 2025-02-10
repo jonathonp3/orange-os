@@ -23,12 +23,13 @@ modules:
     install:
       - micro
       - starship
-      
+
       - qemu
       - libvirt
       - virt-manager
       - virt-install
 
+      - ffmpeg
       - gparted
       - lshw
       - net-tools
