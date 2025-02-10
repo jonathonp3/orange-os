@@ -35,45 +35,48 @@ modules:
 
       # Codecs Encoding:
         - ffmpeg
-      # - ffmpeg-libs
-      # - ffmpegthumbnailer
+        - ffmpeg-libs
+      
+        # - ffmpegthumbnailer
+        # - gstreamer1-plugins-bad
+        # - gstreamer1-plugin-libav
         - yt-dlp
         
       # Containers
-      # - distrobox
-      
+        # - distrobox
+        
       # Editors:
-       - pluma
-       - vim
-  
+        - pluma
+        - vim
+        
       # Google-fonts:
-       - google-noto-sans-balinese-fonts
-       - google-noto-sans-cjk-fonts
-       - google-noto-sans-javanese-fonts
-       - google-noto-sans-sundanese-fonts
-       - google-roboto-fonts
-  
+        - google-noto-sans-balinese-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-sans-javanese-fonts
+        - google-noto-sans-sundanese-fonts
+        - google-roboto-fonts
+        
       # Virtualisation:
-       - qemu
-       - libvirt
-       - virt-manager
-       - virt-install
+        - qemu
+        - libvirt
+        - virt-manager
+        - virt-install
      
       # Tools
-       - flatpak-spaw
-       # - fuse
-       - grub2-tools-extra
-       - gparted
-       - lshw
-       - micro
-       - net-tools
-       - python
-       - python3-pip # gext
-       - rsync
-       - smartmontools
-       - syncthing
-       - starship
-       # - tailscale
+        - flatpak-spaw
+        # - fuse
+        - grub2-tools-extra
+        - gparted
+        - lshw
+        - micro
+        - net-tools
+        - python
+        - python3-pip # gext
+        - rsync
+        - smartmontools
+        - syncthing
+        - starship
+        # - tailscale
         - traceroute
         - zstd
         - wireguard-tools
