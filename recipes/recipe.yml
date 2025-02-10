@@ -77,7 +77,7 @@ modules:
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: bling
-     install:
+    install:
         - negativo17
 
 
