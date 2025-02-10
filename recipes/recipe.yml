@@ -76,4 +76,12 @@ modules:
        
     user: {} # Also add Flathub user repo, but no user packages
 
+   - type: gnome-extensions
+     install: 
+       - https://extensions.gnome.org/extension/3/bottom-panel/
+       - https://extensions.gnome.org/extension/2/move-clock/
+       - https://extensions.gnome.org/extension/1462/panel-date-format/
+       - https://extensions.gnome.org/extension/4/panel-favorites/
+       - https://extensions.gnome.org/extension/602/window-list/
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
