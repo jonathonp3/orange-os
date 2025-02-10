@@ -19,17 +19,28 @@ modules:
 
   - type: rpm-ostree
     repos:
-    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+     # - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+
+  - type: bling
+     install:
+      # - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
+      - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
+      # - ublue-update # https://github.com/ublue-os/ublue-update
+      # - 1password # install 1Password (stable) and `op` CLI tool
+      # - dconf-update-service # a service unit that updates the dconf db on boot
+      # - gnome-vrr # enables gnome-vrr for your image
+    
     install:
+
       # Codecs Encoding
-      - ffmpeg
-      - ffmpeg-libs
-      - ffmpegthumbnailer
+      # - ffmpeg
+      # - ffmpeg-libs
+      # - ffmpegthumbnailer
       - yt-dlp
       
       # Containers
-    # - distrobox
+      # - distrobox
       
       # Editors
       - pluma
@@ -43,7 +54,7 @@ modules:
      
       # 
       - flatpak-spaw
-    # - fuse
+      # - fuse
       - grub2-tools-extra
       - gparted
       - lshw
@@ -55,10 +66,11 @@ modules:
       - smartmontools
       - syncthing
       - starship
-      - tailscale
+      # - tailscale
       - traceroute
       - zstd
       - wireguard-tools
+   
 
      
     remove:
