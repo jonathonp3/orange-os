@@ -19,13 +19,13 @@ modules:
 
   - type: rpm-ostree
     repos:
-     # - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    # - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
 
   - type: bling
      install:
       # - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
-      - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
+        - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
       # - ublue-update # https://github.com/ublue-os/ublue-update
       # - 1password # install 1Password (stable) and `op` CLI tool
       # - dconf-update-service # a service unit that updates the dconf db on boot
@@ -37,48 +37,46 @@ modules:
       # - ffmpeg
       # - ffmpeg-libs
       # - ffmpegthumbnailer
-      - yt-dlp
-      
+        - yt-dlp
+        
       # Containers
       # - distrobox
       
       # Editors:
-      - pluma
-      - vim
+       - pluma
+       - vim
   
       # Google-fonts:
-      - google-noto-sans-balinese-fonts
-      - google-noto-sans-cjk-fonts
-      - google-noto-sans-javanese-fonts
-      - google-noto-sans-sundanese-fonts
-      - google-roboto-fonts
+       - google-noto-sans-balinese-fonts
+       - google-noto-sans-cjk-fonts
+       - google-noto-sans-javanese-fonts
+       - google-noto-sans-sundanese-fonts
+       - google-roboto-fonts
   
       # Virtualisation:
-      - qemu
-      - libvirt
-      - virt-manager
-      - virt-install
+       - qemu
+       - libvirt
+       - virt-manager
+       - virt-install
      
       # Tools
-      - flatpak-spaw
-      # - fuse
-      - grub2-tools-extra
-      - gparted
-      - lshw
-      - micro
-      - net-tools
-      - python
-      - python3-pip # gext
-      - rsync
-      - smartmontools
-      - syncthing
-      - starship
+       - flatpak-spaw
+       # - fuse
+       - grub2-tools-extra
+       - gparted
+       - lshw
+       - micro
+       - net-tools
+       - python
+       - python3-pip # gext
+       - rsync
+       - smartmontools
+       - syncthing
+       - starship
       # - tailscale
-      - traceroute
-      - zstd
-      - wireguard-tools
-   
-
+        - traceroute
+        - zstd
+        - wireguard-tools
      
     remove:
       # example: removing firefox (in favor of the flatpak)
