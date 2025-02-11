@@ -20,6 +20,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       - micro
       - starship
@@ -46,6 +47,7 @@ modules:
       - rsync
       - smartmontools
       - syncthing
+      - tailscale
       - traceroute
       - vim
       - zstd
@@ -94,6 +96,7 @@ modules:
     install:
         - 2 # Frippery Move Clock
         - Frippery Panel Favorites
+        - 6139 # Tailscale QS
         - 602 # Window List by fmuellner
     
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
