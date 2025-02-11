@@ -101,10 +101,9 @@ modules:
   
   - type: fonts
     install:
-    google-fonts:
        - Roboto
        - Open Sans
-    nerd-fonts:
+       
        - FiraCode
        - Hack
        - JetBrainsMono
