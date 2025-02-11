@@ -96,6 +96,7 @@ modules:
   
   - type: fonts
     fonts:
+      google-fonts:
        - Lato
        - Merriweather
        - Montserrat
