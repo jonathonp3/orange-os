@@ -80,6 +80,11 @@ modules:
         - org.telegram.desktop
         - org.videolan.VLC
         
+  - type: systemd
+    user:
+      emabled:
+        - syncthing.service
+        
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: bling
