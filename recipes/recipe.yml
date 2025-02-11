@@ -94,6 +94,7 @@ modules:
   
   - type: gnome-extensions
     install:
+        - 30 # Dash-to-dock
         - 2 # Frippery Move Clock
         - Frippery Panel Favorites
         - 6139 # Tailscale QS
