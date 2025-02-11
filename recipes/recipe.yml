@@ -31,11 +31,6 @@ modules:
       - virt-install
 
       - ffmpeg
-
-      - google-noto-sans-balinese-fonts
-      - google-noto-sans-cjk-fonts
-      - google-noto-sans-javanese-fonts
-      - google-noto-sans-sundanese-fonts
       
       - gparted
       - lshw
@@ -100,15 +95,17 @@ modules:
         - 602 # Window List by fmuellner
   
   - type: fonts
-    install:
-       - Roboto
+    fonts:
+       - Lato
+       - Merriweather
+       - Montserrat
+       - Oswald
        - Open Sans
-       
-       - FiraCode
-       - Hack
-       - JetBrainsMono
-       - NerdFontsSymbolsOnly
-       - SourceCodePro
-       - Terminus
+       - PT Sans
+       - Raleway
+       - Roboto
+       - Slabo
+       - Source Sans 3
+      
        
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
