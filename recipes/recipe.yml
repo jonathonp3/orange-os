@@ -36,7 +36,6 @@ modules:
       - google-noto-sans-cjk-fonts
       - google-noto-sans-javanese-fonts
       - google-noto-sans-sundanese-fonts
-      - google-roboto-fonts
       
       - gparted
       - lshw
@@ -99,5 +98,18 @@ modules:
         - Frippery Panel Favorites
         - 6139 # Tailscale QS
         - 602 # Window List by fmuellner
-    
+  
+  - type: fonts
+    install:
+    google-fonts:
+       - Roboto
+       - Open Sans
+    nerd-fonts:
+       - FiraCode
+       - Hack
+       - JetBrainsMono
+       - NerdFontsSymbolsOnly
+       - SourceCodePro
+       - Terminus
+       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
