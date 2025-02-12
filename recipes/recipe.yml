@@ -95,8 +95,10 @@ modules:
     install:
         - 307 # Dash-to-dock
         - 2 # Frippery Move Clock
+        - 1319 # GSConnect
         - Frippery Panel Favorites
         - 6139 # Tailscale QS
+        - 1460 # Vitals
         - 602 # Window List by fmuellner
   
   - type: fonts
