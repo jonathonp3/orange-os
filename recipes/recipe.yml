@@ -32,6 +32,7 @@ modules:
       - virt-install
       
       - distrobox
+      - flatpak-spawn
       - ffmpeg
       - ffmpeg-libs
       - ffmpegthumbnailer
@@ -48,7 +49,7 @@ modules:
       - traceroute
       - vim
       - zstd
-      - zync
+      - zsync
       - yt-dlp
       - wireguard-tools
       
