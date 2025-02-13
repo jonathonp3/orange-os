@@ -64,11 +64,13 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
+        - app.fotema.Fotema
         - org.mozilla.firefox
         - com.github.tchx84.Flatseal
         - com.github.rafostar.Clapper
         - com.google.Chrome
         - com.spotify.Client
+        - com.vixalien.sticky
         - io.bassi.Amberol
         - it.mijorus.gearlever
         - org.freac.freac
