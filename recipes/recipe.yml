@@ -21,6 +21,7 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/elxreno/zsync/repo/fedora-%OS_VERSION%/elxreno-zsync-fedora-%OS_VERSION%.repo
     install:
       - micro
       - starship
@@ -31,6 +32,8 @@ modules:
       - virt-install
 
       - ffmpeg
+      - tailscale
+      - zsync
       
       - gparted
       - lshw
@@ -41,7 +44,6 @@ modules:
       - rsync
       - smartmontools
       - syncthing
-      - tailscale
       - traceroute
       - vim
       - zstd
@@ -96,6 +98,7 @@ modules:
         - 307 # Dash-to-dock
         - 2 # Frippery Move Clock
         - 1319 # GSConnect
+        - 6655 # OpenWeather Refined
         - Frippery Panel Favorites
         - 6139 # Tailscale QS
         - 1460 # Vitals
