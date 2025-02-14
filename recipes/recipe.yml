@@ -37,6 +37,8 @@ modules:
       - ffmpeg-libs
       - ffmpegthumbnailer
       - gparted
+      - heif-pixbuf-loader
+      - libfdk-aac
       - lshw
       - net-tools
       - pluma
@@ -109,6 +111,7 @@ modules:
         - nfs-server.service
         - rpcbind.service
         - libvirtd.service
+        - sshd.service
         
     user:
       enabled:
