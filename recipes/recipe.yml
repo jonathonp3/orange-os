@@ -108,6 +108,8 @@ modules:
         - smb.service
         - nfs-server.service
         - rpcbind.service
+        - libvirtd.service
+        
     user:
       enabled:
         - syncthing.service
