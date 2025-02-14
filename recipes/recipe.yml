@@ -104,10 +104,9 @@ modules:
         
   - type: systemd
     system: enabled
-        - systemctl start smb
-        - systemctl enable smb
-        - systemctl enable rpcbind nfs-server
-        - systemctl start rpcbind nfs-server
+        - smb.service
+        - nfs-server.service
+        - rpcbind.service
     user:
       emabled:
         - syncthing.service
