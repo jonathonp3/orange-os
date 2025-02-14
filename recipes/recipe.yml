@@ -104,8 +104,8 @@ modules:
         
   - type: systemd
     system: enabled
-        - sudo systemctl start smb
-        - sudo systemctl enable smb
+        - systemctl start smb
+        - systemctl enable smb
         - systemctl enable rpcbind nfs-server
         - systemctl start rpcbind nfs-server
     user:
