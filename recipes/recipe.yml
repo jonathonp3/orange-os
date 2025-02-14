@@ -103,12 +103,13 @@ modules:
         - org.videolan.VLC
         
   - type: systemd
-    system: enabled
+    system: 
+      enabled:
         - smb.service
         - nfs-server.service
         - rpcbind.service
     user:
-      emabled:
+      enabled:
         - syncthing.service
         
     user: {} # Also add Flathub user repo, but no user packages
