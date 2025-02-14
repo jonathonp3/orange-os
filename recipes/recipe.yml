@@ -103,6 +103,11 @@ modules:
         - org.videolan.VLC
         
   - type: systemd
+    system: enabled
+        - sudo systemctl start smb
+        - sudo systemctl enable smb
+        - systemctl enable rpcbind nfs-server
+        - systemctl start rpcbind nfs-server
     user:
       emabled:
         - syncthing.service
