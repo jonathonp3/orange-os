@@ -43,6 +43,8 @@ modules:
       - python
       - python3-pip
       - rsync
+      - samba
+      - samba-client
       - smartmontools
       - syncthing
       - tailscale
