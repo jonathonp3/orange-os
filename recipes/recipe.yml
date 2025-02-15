@@ -25,7 +25,8 @@ modules:
     install:
       - micro
       - starship
-      
+
+      - 'Development Tools'
       - flatpak-spawn
       - ffmpeg
       - ffmpeg-libs
