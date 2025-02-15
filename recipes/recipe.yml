@@ -92,7 +92,6 @@ modules:
         - org.gnome.Rhythmbox3
         - org.gnome.SimpleScan
         - org.gnome.Snapshot
-        - org.gnome.SoundRecorder
         - org.gnome.TextEditor
         - org.kde.kid3
         - org.signal.Signal
