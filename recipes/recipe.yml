@@ -38,6 +38,7 @@ modules:
       - pluma
       - python
       - python3-pip
+      - procps-ng
       - rsync
       - samba
       - samba-client
