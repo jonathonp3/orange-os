@@ -105,7 +105,6 @@ modules:
         - smb.service
         - nfs-server.service
         - rpcbind.service
-        - libvirtd.service
         - sshd.service
         
     user:
