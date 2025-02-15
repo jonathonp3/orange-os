@@ -26,7 +26,6 @@ modules:
       - micro
       - starship
       
-      - distrobox
       - flatpak-spawn
       - ffmpeg
       - ffmpeg-libs
