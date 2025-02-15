@@ -26,11 +26,11 @@ modules:
       - micro
       - starship
 
-      - 'Development Tools'
       - flatpak-spawn
       - ffmpeg
       - ffmpeg-libs
       - ffmpegthumbnailer
+      - gcc
       - gparted
       - heif-pixbuf-loader
       - libfdk-aac
